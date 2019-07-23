@@ -1,0 +1,45 @@
+[
+	{
+		"id": "file",
+		"children": [
+			{
+				"caption": "Open iTerm Tab in Root",
+				"command": "open_iterm",
+			},
+			{
+				"caption": "Open iTerm Tab Here",
+				"command": "open_iterm",
+				"args": {"file": true}
+			}
+		]
+	},
+	{
+		"id": "preferences",
+		"children": [{
+			"caption": "Package Settings",
+			"mnemonic": "P",
+			"id": "package-settings",
+			"children": [
+			{
+				"caption": "OpenIterm",
+				"children": [
+				{
+					"caption": "Settings",
+					"command": "edit_settings",
+					"args": {
+						"base_file": "${packages}/OpenIterm/OpenIterm.sublime-settings",
+						"default": "// OpenIterm Settings - User\n{\n\t// The path to osascript.\n\t// Run `which osascript` in a terminal to find this path on your system.\n\t// \"osascript\" : \"/usr/bin/osascript\",\n\n\t// Print additional info to the console for debugging problems.\n\t// \"debug\" : true\n}"
+					}
+				},
+				{
+					"caption": "Key Bindings",
+					"command": "edit_settings",
+					"args": {
+						"base_file": "${packages}/OpenIterm/Default ($platform).sublime-keymap",
+						"default": "${packages}/User/Default ($platform).sublime-keymap"
+					}
+				}]
+			}]
+		}]
+	}
+]

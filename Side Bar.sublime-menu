@@ -1,0 +1,11 @@
+[
+	{"caption":"-", "id":"side-bar-iterm-tab-separator"},
+	{
+		"caption": "Open iTerm Tab Here",
+		"command": "open_iterm",
+		"args" : {
+			"paths": [],
+			"file": true
+		}
+	}
+]

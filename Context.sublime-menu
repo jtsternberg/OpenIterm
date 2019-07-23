@@ -1,0 +1,16 @@
+[
+	{
+		"caption": "Open iTerm Tab in Root",
+		"id": "side-bar-new-iterm-tab-in-root",
+		"command": "open_iterm",
+	},
+	{
+		"caption": "Open iTerm Tab Here",
+		"id": "side-bar-new-iterm-tab",
+		"command": "open_iterm",
+		"args" : {
+			"paths" : [],
+			"file": true
+		}
+	}
+]
