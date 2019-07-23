@@ -58,7 +58,6 @@ class OpenItermCommand(sublime_plugin.WindowCommand):
 		if not paths:
 			paths = get_file_path(self.window.active_view())
 
-		pprint(paths)
 		self.paths = paths
 		self.settings = sublime.load_settings('OpenIterm.sublime-settings')
 
@@ -101,6 +100,7 @@ class OpenItermCommand(sublime_plugin.WindowCommand):
 		(out, err) = proc.communicate()
 
 		if self.settings.get('debug'):
+			self.debug_info['paths'] = self.paths
 			self.debug_info['path'] = path
 			self.debug_info['cmd'] = ' '.join(command)
 			self.debug_info['process_out'] = out
