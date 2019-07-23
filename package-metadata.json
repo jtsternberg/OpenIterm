@@ -1,1 +1,8 @@
-{"sublime_text": "*", "dependencies": [], "version": "7.0.0", "url": "http://malinowski.be/termX", "description": "MacTerminal is a SublimeText plugin. It opens new Terminal tab (on current or new window if necessary). It's working with Terminal and iTerm.", "platforms": ["osx", "osx-x64"]}
+{
+	"sublime_text": "*",
+	"dependencies": [],
+	"version": "0.1.0",
+	"url": "",
+	"description": "OpenIterm is a SublimeText plugin. It opens new iTerm tabs (on current or new window if necessary).",
+	"platforms": ["osx", "osx-x64"]
+}
